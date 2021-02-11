@@ -1,0 +1,19 @@
+SHELL=/bin/sh
+
+SOURCE = main.f90
+EXBL   = main.exe
+F90    = /usr/bin/gfortran
+
+.PHONY exe clean help
+
+exe : $(EXBL)
+
+$(EXBL) : $(SOURCE)
+	$(F90) -o $(EXBL) $(SOURCE)
+
+clean :
+	-rm -f exe
+
+help :
+	@echo "make -> compile source"
+	@echo "clean -> remove executable"

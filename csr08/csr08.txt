@@ -1,0 +1,19 @@
+Python Core Packages
+
+1. Numpy - numerical arrays
+2. Matplotlib - 2D and 3D plots
+3. SciPy - numerical analysis
+         - useful reference: Johannsson, Numerical methods in Python
+4. SymPy - symbolic mathematics
+5. Pandas - data analysis
+
+Comprehensive Python Package site : pypi.org
+  (counterpart to ctan.org for LaTeX)
+
+System vs User Install
+/usr/bin/python  - version 2.7.18  - system install
+/usr/bin/python3 - version 3.8.5   - system install
+
+/usr/local/bin/python3.9 - user install (on vm, 3.9.1)
+  - install any additional packages here
+  - use $ sudo pip3.9 install <package>

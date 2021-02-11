@@ -1,0 +1,18 @@
+Additional useful utilities:
+
+tar - file compression utility (also zip, gzip, ..)
+    - archive files have .tar extension
+
+convert - part of ImageMagick utilities
+        - convert between image file types from CLI
+
+diff - compares content of text files
+
+enscript - convert text file to postscript
+ps2pdf   - convert ps to pdf
+
+find - identifies location of files with specific name
+     - syntax: $ find <dir> -name <file> -print
+
+grep - searches through files for specific phrases
+     - syntax: $ grep -i -l "phrase" -r <dir>

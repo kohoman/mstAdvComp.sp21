@@ -1,0 +1,23 @@
+# Fortran, C++ and CodeBlocks (IDE)
+---
+
+## Fortran
+
+Formula Translation -> Fortran
+
+Fortran is the original numerically-intensive computing language
+
+Fortran I - 1953
+also II, II, IV, 66
+
+Fortran 77 - ANSI Standard
+           - fixed source form - defined column format
+	   - standard file extension - .f
+	   - assumed variable declaration by first letter: I-N integer
+	   - accepted practice: implicit none
+
+Fortran 90 - introduced internal procedures
+	   - free source form
+	   - standard file extension - .f90
+
+* Fortran is NOT case-sensitive
