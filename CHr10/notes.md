@@ -8,7 +8,7 @@ Formula Translation -> Fortran
 Fortran is the original numerically-intensive computing language
 
 Fortran I - 1953
-also II, II, IV, 66
+also II, III, IV, 66
 
 Fortran 77 - ANSI Standard
            - fixed source form - defined column format
