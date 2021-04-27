@@ -1,7 +1,7 @@
 # ... GNU Make for Bourne Shell ...
 SHELL = /bin/bash
 # ... variable definitions ...
-ENV  = /opt/openfoam5/etc/bashrc
+ENV  = /opt/openfoam6/etc/bashrc
 SLVR = icoFoam
 GEO  = case.geo
 MSH  = case.msh

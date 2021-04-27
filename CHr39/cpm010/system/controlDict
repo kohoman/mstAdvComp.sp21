@@ -19,7 +19,7 @@ application     icoFoam;
 
 startFrom       startTime;
 
-startTime       0.5;
+startTime       0.0; // originally: 0.5 (koh, 2019/04/24)
 
 stopAt          endTime;
 
