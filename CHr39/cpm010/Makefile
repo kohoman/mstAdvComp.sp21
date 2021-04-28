@@ -1,7 +1,7 @@
 # ... GNU Make for Bourne Shell ...
 SHELL = /bin/bash
 # ... variable definitions ...
-ENV  = /opt/openfoam6/etc/bashrc
+ENV  = /opt/openfoam8/etc/bashrc
 SLVR = icoFoam
 GEO  = case.geo
 MSH  = case.msh
@@ -19,17 +19,15 @@ help :
 obm :
 	source $(ENV) && blockMesh
 	touch obm
-
 gmo :
 	gmsh $(GEO) -3 -o $(MSH)
 	source $(ENV) && gmshToFoam $(MSH) -case ../$(CDIR)	
 	touch gmo
-
 run :
 	source $(ENV) && $(SLVR)
 	touch run
 all :
-	make msh
+	make obm
 	make run
 	touch all
 clean :
