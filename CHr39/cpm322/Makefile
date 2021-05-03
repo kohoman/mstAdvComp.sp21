@@ -30,7 +30,7 @@ obm : system/blockMeshDict
 	source $(ENV) && blockMesh
 	touch obm
 gmo : $(GEO)
-	gmsh $(GEO) -3 -o $(MSH)
+	gmsh $(GEO) -3 -format msh2 -o $(MSH)
 	source $(ENV) && gmshToFoam $(MSH) -case ../$(CDIR)
 	source $(ENV) && changeDictionary 
 	touch gmo
