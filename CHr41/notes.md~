@@ -1,0 +1,46 @@
+Class Hour 41
+------
+
+# OpenFOAM solvers
+
+simpleFoam  - steady-state, incompressible
+using SIMPLE
+
+icoFoam - transient, incompressible, laminar
+for Newtonian flow using PISO
+
+pisoFoam - transient, incompressible, turbulent
+using PISO, where turbulent may include laminar,
+RAS, or LES.  Generally, Courant number < 1.
+
+pimpleFoam - transient, incompressible turbulent
+using a hybrid PISO-SIMPLE algorithm.  Allows for
+larger time steps and Courant number > 1.
+
+# OpenFOAM directory structure
+
+0/ - initial and boundary conditions
+
+constant/ - properties, fluid as well as
+model properties
+
+system/ - numerical choice parameters
+
+# case subdirectories - driven cavity
+
+cpm300 - baseline icoFoam case
+
+cpm330 - baseline pisoFoam case
+
+cpm331 - baseline pimpleFoam case
+
+cpm200  - k-epsilon turbulence model
+
+cpm210 - k-omega turbulence model
+
+cpm220 - Spalart-Almaras turbulence model
+(one eqn model).
+
+# Command-line utilities
+
+diff - compares text files
